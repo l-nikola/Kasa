@@ -6,15 +6,11 @@ function Header() {
   return (
     <header>
       <Link to="/">
-        <img
-          className="headerLogo"
-          src="../public/logo.svg"
-          alt="Logo du site"
-        />
+        <img src="../public/logo.svg" alt="Logo du site" />
       </Link>
 
       <nav>
-        <ul className="headerNav">
+        <ul>
           <li>
             <Link to="/" className={location.pathname === "/" ? "active" : ""}>
               Accueil
