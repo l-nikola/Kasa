@@ -5,10 +5,13 @@ import Home from "./pages/Home/";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Housing from "./pages/Housing";
+import Header from "./components/Header"; // Importer le composant Header
+import "./styles/index.sass";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
