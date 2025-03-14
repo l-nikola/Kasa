@@ -1,4 +1,4 @@
-function Home() {
+function Error() {
   return (
     <>
       <h1>Error</h1>
@@ -6,4 +6,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Error;
