@@ -5,7 +5,8 @@ import Home from "./pages/Home/";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Housing from "./pages/Housing";
-import Header from "./components/Header"; // Importer le composant Header
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./styles/index.sass";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/housing/:id" element={<Housing />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );
