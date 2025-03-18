@@ -1,7 +1,8 @@
-function Card() {
+function Card({ image, title }) {
   return (
     <section className="card">
-      <p>Titre de la location</p>
+      <img src={image} alt={title} className="card-image" />
+      <p>{title}</p>
     </section>
   );
 }

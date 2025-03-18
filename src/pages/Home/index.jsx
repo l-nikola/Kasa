@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
+import logements from "../../../public/logement.json";
 
 function Home() {
   return (
@@ -10,12 +11,13 @@ function Home() {
       />
 
       <div className="cardContainer">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {logements.map((logement) => (
+          <Card
+            key={logement.id}
+            image={logement.cover}
+            title={logement.title}
+          />
+        ))}
       </div>
     </>
   );
