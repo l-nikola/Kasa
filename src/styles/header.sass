@@ -2,12 +2,15 @@ header
   display: flex
   justify-content: space-between
   align-items: center
-  width: 1240px
-  height: 68px
   margin: 35px auto 40px auto
 
   img
     width: 190px
+
+    //*********** Mobile ***********
+    @media only screen and (max-width: 425px)
+      width: 130px
+      height: 47px
 
   ul
     display: flex
@@ -16,6 +19,12 @@ header
     list-style: none
     font-weight: 500
     font-size: 23px
+
+    //*********** Mobile ***********
+    @media only screen and (max-width: 425px)
+      font-size: 15px
+      gap: 23px
+      text-transform: uppercase
 
     .active
       text-decoration: underline
