@@ -10,7 +10,7 @@ function About() {
         {CollapseData.map((data) => {
           return (
             <div key={data.id}>
-              <Collapse text={data.title} />
+              <Collapse title={data.title} content={data.content} />
             </div>
           );
         })}
