@@ -1,12 +1,12 @@
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
-import logements from "../../../public/logement.json";
+import logements from "../../../public/data/logement.json";
 
 function Home() {
   return (
     <>
       <Banner
-        image="public\Image source 1.svg"
+        image="public/image\Image source 1.svg"
         text="Chez vous, partout et ailleurs"
       />
 

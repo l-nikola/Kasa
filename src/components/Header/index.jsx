@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <Link to="/">
-        <img src="../public/logo.svg" alt="Logo du site" />
+        <img src="../public/image/logo.svg" alt="Logo du site" />
       </Link>
 
       <nav>
