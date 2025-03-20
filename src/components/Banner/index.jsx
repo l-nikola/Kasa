@@ -3,7 +3,7 @@ function Banner({ image, text }) {
   return (
     <section className={`banner ${brightnessClass}`}>
       <img src={image} alt={text} />
-      {text && <p>{text}</p>}
+      <p>{text}</p>
     </section>
   );
 }
