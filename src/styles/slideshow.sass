@@ -1,0 +1,36 @@
+.slideshow
+  position: relative
+  width: 100%
+
+  img
+    width: 100%
+    height: 415px
+    border-radius: 25px
+    object-fit: cover
+
+  &__prev,
+  &__next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    background: none
+    border: none
+    color: white
+    cursor: pointer
+    padding: 20px
+
+    i
+      font-size: 90px
+
+  &__prev
+    left: 0
+
+  &__next
+    right: 0
+
+  &__counter
+    position: absolute
+    font-size: 18px
+    bottom: 25px
+    left: 50%
+    color: white
