@@ -7,10 +7,9 @@ function Collapse({ title, content }) {
     <div className="collapseWrapper">
       <div className="collapse">
         <span>{title}</span>
-        <i
-          className={`fa-solid fa-chevron-up ${isOpen ? "rotate" : ""}`}
-          onClick={() => setIsOpen(!isOpen)}
-        ></i>
+        <button onClick={() => setIsOpen(!isOpen)}>
+          <i className={`fa-solid fa-chevron-up ${isOpen ? "rotate" : ""}`}></i>
+        </button>
       </div>
       <div className={`collapse__content ${isOpen ? "open" : ""}`}>
         {content}
