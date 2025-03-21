@@ -5,9 +5,9 @@ function Housing() {
   const { id } = useParams();
 
   return (
-    <>
+    <main>
       <h1>Housing {id}</h1>
-    </>
+    </main>
   );
 }
 

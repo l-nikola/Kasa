@@ -1,7 +1,6 @@
 function Banner({ image, text }) {
-  const brightnessClass = text ? "banner__text" : "";
   return (
-    <figure className={`banner ${brightnessClass}`}>
+    <figure className={`banner ${text ? "banner__text" : ""}`}>
       <img src={image} alt={text} />
       <figcaption>{text}</figcaption>
     </figure>

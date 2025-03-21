@@ -4,7 +4,7 @@ import logements from "../../../public/data/logement.json";
 
 function Home() {
   return (
-    <>
+    <main>
       <Banner
         image="public/image/Image source 1.svg"
         text="Chez vous, partout et ailleurs"
@@ -19,7 +19,7 @@ function Home() {
           />
         ))}
       </div>
-    </>
+    </main>
   );
 }
 
