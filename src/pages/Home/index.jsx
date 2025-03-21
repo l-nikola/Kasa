@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <Banner
-        image="public/image\Image source 1.svg"
+        image="public/image/Image source 1.svg"
         text="Chez vous, partout et ailleurs"
       />
 

@@ -5,7 +5,7 @@ import CollapseData from "../../../public/data/collapses.json";
 function About() {
   return (
     <div>
-      <Banner image="public/image\Image source 2.svg" />
+      <Banner image="public/image/Image source 2.svg" />
       <section className="collapseContainer">
         {CollapseData.map((data) => {
           return (
