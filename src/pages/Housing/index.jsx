@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import logements from "../../../public/data/logement.json";
 import Slideshow from "../../components/Slideshow";
 import Collapse from "../../components/Collapse";
+import Tags from "../../components/Tags";
 
 function Housing() {
   const { id } = useParams();
@@ -14,7 +15,7 @@ function Housing() {
       <h1>{logement.title}</h1>
       {/* // Avatar components // */}
       <span>{logement.location}</span>
-      {/* // Tags components //  */}
+      <Tags tags={logement.tags} />
       {/* // Rating components // */}
       <section className="housing__collapse">
         <Collapse title="Description" content={logement.description} />
@@ -29,8 +30,6 @@ function Housing() {
           }
         />
       </section>
-
-      <br />
     </main>
   );
 }
