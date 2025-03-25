@@ -5,13 +5,31 @@
     gap: 10px
     align-items: center
 
+    //*********** Mobile ***********
+    @media only screen and (max-width: 425px)
+        width: 105px
+        height: 33px
+
     p
         color: var(--primaire)
         font-weight: 500
         font-size: 18px
         text-align: right
+
+        //*********** Mobile ***********
+        @media only screen and (max-width: 425px)
+            font-size: 12px
+
+        //*********** Mobile S ***********
+        @media only screen and (max-width: 374px)
+            font-size: 10px
     
     img 
         width: 64px
         height: 64px
         border-radius: 50%
+
+        //*********** Mobile ***********
+        @media only screen and (max-width: 425px)
+            width: 32px
+            height: 32px
