@@ -4,6 +4,7 @@ import logements from "../../../public/data/logement.json";
 import Slideshow from "../../components/Slideshow";
 import Collapse from "../../components/Collapse";
 import Tags from "../../components/Tags";
+import Profile from "../../components/Profile";
 
 function Housing() {
   const { id } = useParams();
@@ -13,7 +14,7 @@ function Housing() {
     <main className="housing">
       <Slideshow pictures={logement.pictures} />
       <h1>{logement.title}</h1>
-      {/* // Avatar components // */}
+      <Profile picture={logement.host.picture} name={logement.host.name} />
       <span>{logement.location}</span>
       <Tags tags={logement.tags} />
       {/* // Rating components // */}
