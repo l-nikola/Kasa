@@ -14,11 +14,17 @@ function Housing() {
   return (
     <main className="housing">
       <Slideshow pictures={logement.pictures} />
-      <h1>{logement.title}</h1>
-      <Profile picture={logement.host.picture} name={logement.host.name} />
-      <span>{logement.location}</span>
-      <Tags tags={logement.tags} />
-      <Rating rating={logement.rating} />
+      <section className="housing__header">
+        <div>
+          <h1>{logement.title}</h1>
+          <span className="housing__location">{logement.location}</span>
+        </div>
+        <Profile picture={logement.host.picture} name={logement.host.name} />
+      </section>
+      <section className="housing__tagsAndRating">
+        <Tags tags={logement.tags} />
+        <Rating rating={logement.rating} />
+      </section>
       <section className="housing__collapse">
         <Collapse title="Description" content={logement.description} />
         <Collapse

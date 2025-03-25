@@ -1,9 +1,30 @@
 .housing
 
+    h1
+        color: var(--primaire)
+        font-weight: 500
+        font-size: 36px
+    
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 24px
+
+    &__tagsAndRating
+        display: flex
+        justify-content: space-between
+        margin: 20px 0 25px 0
+    
+    &__location
+        font-size: 18px
+        font-weight: 500
+
     &__collapse
         display: flex
         gap: 80px
         margin-right: 35px
+        margin-bottom: 50px
 
         //*********** Tablet ***********
         @media only screen and (max-width: 768px)
