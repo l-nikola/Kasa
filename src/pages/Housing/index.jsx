@@ -6,10 +6,15 @@ import Collapse from "../../components/Collapse";
 import Tags from "../../components/Tags";
 import Profile from "../../components/Profile";
 import Rating from "../../components/Rating";
+import Error from "../Error";
 
 function Housing() {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id);
+
+  if (!logement) {
+    return <Error />;
+  }
 
   return (
     <main className="housing">
