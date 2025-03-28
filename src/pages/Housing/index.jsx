@@ -33,17 +33,14 @@ function Housing() {
         </section>
       </section>
       <section className="housing__collapse">
-        <Collapse title="Description" content={logement.description} />
-        <Collapse
-          title="Équipements"
-          content={
-            <ul>
-              {logement.equipments.map((equipment, index) => (
-                <li key={index}>{equipment}</li>
-              ))}
-            </ul>
-          }
-        />
+        <Collapse title="Description">{logement.description}</Collapse>
+        <Collapse title="Équipements">
+          <ul>
+            {logement.equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
+        </Collapse>
       </section>
     </main>
   );
