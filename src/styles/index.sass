@@ -24,15 +24,22 @@
   padding: 0
   font-family: "Montserrat", sans-serif
 
-.app
+.layout
+  display: flex
+  flex-direction: column
+  min-height: 100vh
   max-width: 1440px
   margin: 0 auto
+  
+.app
   padding: 0 100px 
+  flex: 1
   
   //*********** Mobile ***********
   @media only screen and (max-width: 425px)
     max-width: 335px
     padding: 0 20px 
+    margin: 0 auto
 
 a 
   text-decoration: none

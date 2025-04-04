@@ -12,16 +12,18 @@ import "./styles/index.sass";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
-      <div className="app">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/housing/:id" element={<Housing />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
+      <div className="layout">
+        <div className="app">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/housing/:id" element={<Housing />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </Router>
   </React.StrictMode>
 );
